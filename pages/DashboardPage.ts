@@ -12,6 +12,7 @@ export class DashboardPage{
     readonly messagePopup : Locator;
     readonly closepopup : Locator;
     readonly editmodaltitle:Locator;
+    readonly clonemodaltitle:Locator;
 
 
     constructor(page:Page){
@@ -26,6 +27,7 @@ export class DashboardPage{
          this.messagePopup = page.locator("#swal2-content");
          this.closepopup = page.locator(".swal2-actions>button")
          this.editmodaltitle =  page.getByRole('heading', { name: 'Update Order' })
+         this.clonemodaltitle = page.getByRole('heading', { name: 'Clone Order' })
     }
 
    async navigate() {

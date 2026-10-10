@@ -16,7 +16,7 @@ export class AddOrder {
   readonly searchResults: Locator;
   readonly selectedAddress: Locator;
   readonly addLocation: Locator;
-  //   readonly haltDuration: Locator;
+  //readonly haltDuration: Locator;
   readonly selectHalt: Locator;
   readonly applyHalt: Locator;
   //   readonly stopNumber: Locator;

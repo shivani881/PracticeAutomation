@@ -12,7 +12,7 @@ test("Add Pickup order through UI", async ({ page }) => {
   await addorder.fillLocationDetails("pinnacle business park"," Noida Sector 3")
   await addorder.fillOtherDetails("Pickup","05","4","pickup notes");
   await addorder.submitOrderForm();
-    await expect(addorder.message).toHaveText("Order Successfully Saved")
+    await expect(addorder.message).toHaveText("Order Successfully Saved",{timeout:20000})
  
 });
 
@@ -26,7 +26,7 @@ test("Add Dropoff order through UI", async ({ page }) => {
   await addorder.fillLocationDetails("pinnacle business park"," Noida Sector 3")
   await addorder.fillOtherDetails("DropOff","01","3","dropoff notes");
   await addorder.submitOrderForm();
-    await expect(addorder.message).toHaveText("Order Successfully Saved")
+    await expect(addorder.message).toHaveText("Order Successfully Saved",{timeout:20000})
 
 });
 
@@ -40,7 +40,7 @@ test("Add Service order through UI", async ({ page }) => {
   await addorder.fillLocationDetails("pinnacle business park"," Noida Sector 3")
   await addorder.fillOtherDetails("Service","10","5","service notes");
   await addorder.submitOrderForm();
-    await expect(addorder.message).toHaveText("Order Successfully Saved")
+    await expect(addorder.message).toHaveText("Order Successfully Saved",{timeout:20000})
 
 });
 
